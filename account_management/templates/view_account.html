@@ -1,0 +1,40 @@
+{% extends 'homepage.html' %}
+{% block info %}
+
+
+
+
+<div class="card">
+    <div class="card-header">
+        View current accounts
+    </div>
+    <div class="card-body">
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Account number</th>
+                    <th>Account type</th>
+                    <th>Account balance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>212</td>
+                    <td>credit</td>
+                    <td>20000</td>
+                </tr>
+                <tr>
+                    <td>211</td>
+                    <td>debit</td>
+                    <td>6000</td>
+                </tr>
+                <!-- and so on... -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends 'homepage.html' %}
+{% block info %}
+
+
+ <div class="center">
+
+
+            <div class="container">
+
+                <div class="text">Login Form</div>
+
+                <form  method = "POST">{% csrf_token %}
+<!--                    <div class="data">-->
+<!--                        <label for="{{ form.from_account.id_for_label }}">From account :</label>-->
+<!--                        {{ form.from_account }}-->
+
+<!--                    </div>-->
+<!--                    <div class="data">-->
+<!--                        <label for="{{ form.to_account.id_for_label }}">To account:</label>-->
+<!--                        {{ form.to_account }}-->
+
+<!--                    </div>-->
+<!--                    <div class="data">-->
+<!--                        <label for="{{ form.amount.id_for_label }}">Amount</label>-->
+<!--                        {{ form.amount }}-->
+
+<!--                    </div>-->
+                    <div class="data">
+                        <label>from account</label>
+                        <input type="text" name="from_account">
+                    </div>
+                    <div class="data">
+                        <label>to account</label>
+                        <input type="text" name="to_account">
+                    </div>
+                    <div class="data">
+                        <label>amount</label>
+                        <input type="text" name="amount">
+                    </div>
+                    <div class="btn">
+                        <div class="inner">
+                        </div>
+                        <button type="submit">Transfer</button>
+                    </div>
+                </form>
+            </div>
+ </div>
+
+
+{% endblock %}
